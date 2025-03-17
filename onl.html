@@ -1,0 +1,233 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="onl.css">
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      
+      <nav>
+        <div class="logo">
+          <h1>ShopNow</h1>
+        </div>
+        <div class="nav-links">
+          <a href="#products">Products</a>
+          <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+        </div>
+      </nav>
+    </header>
+    <video class="video-background" autoplay muted loop>
+      <source src="view.mp4" type="video/mp4">
+      </video>
+
+
+    <!-- Product Section -->
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="1.jpg" alt="Product 1">
+          <h3>Product 1</h3>
+          <p>$10.00</p>
+          <button class="add-to-cart" data-id="1" data-name="Product 1" data-price="10.00">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="3.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>$200.00</p>
+          <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="200.00">Add to Cart</button>
+        </div>
+        <div class="product-list">
+          <div class="product">
+            <img src="1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$10.00</p>
+            <button class="add-to-cart" data-id="1" data-name="Product 1" data-price="10.00">Add to Cart</button>
+          </div>
+        <div class="product">
+          <img src="3.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>$200.00</p>
+          <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="200.00">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="3.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>$200.00</p>
+          <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="200.00">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="3.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>$200.00</p>
+          <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="200.00">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="3.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>$200.00</p>
+          <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="200.00">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="3.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>$200.00</p>
+          <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="200.00">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="3.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>$200.00</p>
+          <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="200.00">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="3.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>$200.00</p>
+          <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="200.00">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="3.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>$200.00</p>
+          <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="200.00">Add to Cart</button>
+        </div>
+        <!-- Add more products here -->
+      </div>
+      
+          <h2>Our Products</h2>
+          <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product">
+              <h3>Product 1</h3>
+              <div class="gallery">
+                <img src="5.jpg" alt="Product 1 Image 1">
+                <img src="4.jpg" alt="Product 1 Image 2">
+                <img src="3.jpg" alt="Product 1 Image 3">
+              </div>
+              <p>$10.00</p>
+              <button class="add-to-cart" data-id="1" data-name="Product 1" data-price="10.00">Add to Cart</button>
+            </div>
+        
+            <!-- Product 2 -->
+            <div class="product">
+              <h3>Product 2</h3>
+              <div class="gallery">
+                <img src="1.jpg" alt="Product 2 Image 1">
+                <img src="2.jpg" alt="Product 2 Image 2">
+                <img src="5.jpg" alt="Product 2 Image 3">
+              </div>
+              <p>$20.00</p>
+              <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="20.00">Add to Cart</button>
+            </div>
+          </div>
+        </section>
+        <section id="cart">
+          <h2>Your Cart</h2>
+          <ul id="cart-items"></ul>
+          <p>Total: $<span id="total-price">0.00</span></p>
+          
+          <!-- PayPal Button -->
+          <div id="paypal-button-container"></div>
+          
+          <button id="checkout">Checkout</button>
+        </section>
+        
+    
+
+    <!-- Cart Section -->
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="total-price">0.00</span></p>
+      <button id="checkout">Checkout</button>
+    </section>
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script>
+
+
+    <footer>
+      <p>&copy; 2025 ShopNow. All rights reserved.</p>
+      <p>Contact # arifhussainhussain26@gmail.com</p>
+    </footer>
+
+    <script>
+    // Shopping Cart functionality
+  let cart = [];
+  let cartCount = document.getElementById('cart-count');
+  let cartItems = document.getElementById('cart-items');
+  let totalPrice = document.getElementById('total-price');
+
+  // Function to update the cart
+  function updateCart() {
+    // Clear the cart items list
+    cartItems.innerHTML = '';
+    
+    let total = 0;
+    
+    // Display cart items
+    cart.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = `${item.name} - $${item.price}`;
+      cartItems.appendChild(li);
+      total += parseFloat(item.price);
+    });
+
+    // Update total price
+    totalPrice.textContent = total.toFixed(2);
+    cartCount.textContent = cart.length;
+  }
+
+  // Add product to cart
+  const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+  addToCartButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const productId = this.getAttribute('data-id');
+      const productName = this.getAttribute('data-name');
+      const productPrice = this.getAttribute('data-price');
+
+      cart.push({ id: productId, name: productName, price: productPrice });
+      updateCart();
+    });
+  });
+
+  // Checkout functionality
+  document.getElementById('checkout').addEventListener('click', function() {
+    if (cart.length === 0) {
+      alert('Your cart is empty!');
+    } else {
+      alert('Checkout successful! Thank you for your purchase.');
+      cart = [];  // Empty the cart after checkout
+      updateCart();
+    }
+  });
+  // PayPal Button Integration (Make sure to include PayPal SDK in your HTML file)
+  paypal.Buttons({
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: totalPrice.textContent
+          }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(details) {
+        alert('Payment Successful! Thank you for your purchase.');
+        cart = []; // Empty cart after payment
+        updateCart();
+      });
+    },
+    onError: function(err) {
+      alert('Error in payment process. Please try again later.');
+    }
+  }).render('#paypal-button-container');
+
+  </script>
+  </body>
+  </html>
