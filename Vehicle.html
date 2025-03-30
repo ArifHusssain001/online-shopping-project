@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Entry Form</title>
+  <link rel="stylesheet" href="data.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Welcome to the Data Entry Portal</h1>
+      <p>Please fill in the form below with the required details.</p>
+    </div>
+  </header>
+
+  <video class="video-background" autoplay muted loop>
+    <source src="view.mp4" type="video/mp4">
+  </video>
+
+  <div class="container">
+    <h2>Vehicle Data Entry Form</h2>
+
+    <form id="data-entry-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Full Name" required>
+
+      <label for="nic">NIC:</label>
+      <input type="text" id="nic" name="nic" placeholder="00000-0000000-0" required>
+
+      <label for="vehicle-number">Vehicle #:</label>
+      <input type="text" id="vehicle-number" name="vehicle-number" placeholder="00-0000" required>
+
+      <label for="company-name">Company Name:</label>
+      <input type="text" id="company-name" name="company-name" placeholder="Company Name" required>
+      <label for="Material">Material:</label>
+      <input type="text" id="Material" name="Material" placeholder="Material" required>
+
+      <label for="department">Department:</label>
+      <select id="department" name="department" required>
+        <option value="" disabled selected>Select Department</option>
+        <option value="HR">Human Resources</option>
+        <option value="IT">Information Technology</option>
+        <option value="Finance">Finance</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Sales">Sales</option>
+        <option value="Operations">Operations</option>
+      </select>
+    <p>
+        <br>
+    </p>
+
+      <label for="issue-card">Issue Card No #:</label>
+      <input type="text" id="issue-card" name="issue-card" placeholder="000000" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <ul class="entries-list" id="entries-list"></ul>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Data Entry Portal. All rights reserved.</p>
+      <p>Contact: arifhussainhussain26@gamil.com</p>
+    </div>
+  </footer>
+
+  <script>
+    // Get the form element and the list element where data will be displayed
+    const form = document.getElementById('data-entry-form');
+    const entriesList = document.getElementById('entries-list');
+
+    // Event listener for form submission
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent page reload on form submission
+
+      // Get values from the form fields
+      const name = document.getElementById('name').value;
+      const nic = document.getElementById('nic').value;
+      const vehicleNumber = document.getElementById('vehicle-number').value;
+      const companyName = document.getElementById('company-name').value;
+      const department = document.getElementById('department').value;
+      const issueCardNo = document.getElementById('issue-card').value;
+
+      // Validate if all fields have data
+      if (name && nic && vehicleNumber && companyName && department && issueCardNo) {
+        // Create a new list item with the entered data
+        const listItem = document.createElement('li');
+        listItem.textContent = `Name: ${name}, NIC: ${nic}, Vehicle: ${vehicleNumber}, Company: ${companyName}, Department: ${department}, Issue Card No: ${issueCardNo}`;
+        
+        // Append the new list item to the entries list
+        entriesList.appendChild(listItem);
+
+        // Display registration completed alert
+        alert('Vehicle registration completed successfully!');
+
+        // Reset the form after submission
+        form.reset();
+      } else {
+        // If any field is empty, show an alert
+        alert('Please fill in all fields before submitting.');
+      }
+    });
+  </script>
+</body>
+</html>

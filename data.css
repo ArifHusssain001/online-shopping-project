@@ -1,0 +1,182 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  
+  /* Header */
+  header {
+    width: 100%;
+    background-color: #1e2a47;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .header-container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .header-container p {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+    
+    .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+        opacity: 30%;
+      }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 200%;
+      max-width: 450px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #FF6347;
+    }
+
+    label {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 2px;
+      display: block;
+    }
+
+    input[type="text"], input[type="number"], button {
+      width: 95%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #FF6347;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #FF4500;
+      
+    }
+
+    .entries-list {
+      margin-top: 20px;
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .entries-list li {
+      background-color: #f1f1f1;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 5px;
+      color: #555;
+    }
+    /* Label Styling */
+label[for="department"] {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Select Dropdown Styling */
+#department {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+/* Select Dropdown Focus Styling */
+#department:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Hover effect on the dropdown */
+#department:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style the Placeholder Option */
+#department option[disabled] {
+  color: #aaa;
+}
+
+/* Option Styling */
+#department option {
+  padding: 10px;
+  background-color: #fff;
+}
+
+    /* Footer Section */
+footer {
+    width: 100%;
+    background-color: #1e2a47;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-container p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+  
+  /* Footer Links (Optional) */
+  .footer-container a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-container a:hover {
+    color: #ffd700; /* Golden hover effect */
+  }
+
+ 
